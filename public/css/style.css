@@ -1,1 +1,95 @@
+:root {
+  --primary: #4CAF50;
+  --secondary: #2196F3;
+  --danger: #f44336;
+  --gray: #f5f5f5;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+}
+
+/* Layout */
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background: #eee;
+  padding: 15px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: white;
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: white;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: var(--primary);
+  color: white;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Forms */
+input, select {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+/* Cards */
+.card {
+  background: var(--gray);
+  padding: 15px;
+  margin: 10px 0;
+}
+
+/* Alerts */
+.alert {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.alert-success {
+  background: #d4edda;
+}
+
+.alert-error {
+  background: #f8d7da;
+}
