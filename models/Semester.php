@@ -26,7 +26,7 @@ class Semester {
 
     /**
      * Logic: Sets all semesters to inactive (0) before activating a specific one.
-     * This ensures only one semester is active at a time[cite: 385, 810].
+     * This ensures only one semester is active at a time.
      */
     public function setAllInactive() {
         $sql = "UPDATE semesters SET is_active = 0";
@@ -34,7 +34,7 @@ class Semester {
     }
 
     /**
-     * Set a specific semester as the active one[cite: 388].
+     * Set a specific semester as the active one.
      */
     public function setActive($id) {
         $sql = "UPDATE semesters SET is_active = 1 WHERE id = ?";
@@ -43,7 +43,7 @@ class Semester {
     }
 
     /**
-     * Get the currently active semester for the student/professor dashboards[cite: 773].
+     * Get the currently active semester for the student/professor dashboards.
      */
     public function getActive() {
         $sql = "SELECT * FROM semesters WHERE is_active = 1 LIMIT 1";
@@ -52,8 +52,8 @@ class Semester {
     }
 
     /**
-     * Delete a semester record[cite: 402].
-     * Note: Check for linked courses in the Controller before calling this[cite: 397].
+     * Delete a semester record.
+     * Note: Check for linked courses in the Controller before calling this.
      */
     public function delete($id) {
         $sql = "DELETE FROM semesters WHERE id = ?";
@@ -62,7 +62,7 @@ class Semester {
     }
 
     /**
-     * Retrieve all semesters for the Admin management list[cite: 49].
+     * Retrieve all semesters for the Admin management list.
      */
     public function getAll() {
         $sql = "SELECT * FROM semesters ORDER BY created_at DESC";
